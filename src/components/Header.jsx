@@ -11,7 +11,7 @@ const Header = () => {
         color: theme === "light" ? "#000" : "#fff",
       }}
     >
-      <h2>Header</h2>
+      <h2>Container</h2>
       <button onClick={toggleTheme}>
         Switch to {theme === "light" ? "Dark" : "Light"} Mode
       </button>
