@@ -2,14 +2,7 @@ import { useState } from 'react';
 import { useForm } from "react-hook-form"
 
 const Info = () => {
-  const [formData, setFormData] = useState({
-    studentName: '',
-    rollNumber: '',
-    email: '',
-    course: '',
-    year: '',
-    phone: '',
-  });
+  
  const {
     register,
     handleSubmit,
