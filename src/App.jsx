@@ -7,9 +7,17 @@ import UserContext from "./context/UserContext"
 function App() {
 
 const {isAuthenticated} = useContext(UserContext)
+const {theme, toggleTheme} = useContext(UserContext)
   return (
-  <div>
+  <div  style={{
+        padding: "15px",
+        background: theme === "light" ? "#eee" : "#333",
+        color: theme === "light" ? "#000" : "#fff",
+      }}>
      <h1>Context API in React</h1>
+     <button onClick={toggleTheme}>
+       {theme === "light" ? "Dark" : "Light"} Mode
+      </button>
   {
     isAuthenticated() ? <Profile/>:<Login/>
   

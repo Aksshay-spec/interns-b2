@@ -13,18 +13,23 @@ function Login() {
         e.preventDefault()
         setuser({username, password})
     }
-  return (
+  return (                
     <div>
-      <h2>Please Login</h2>
+      <h2  style={{ textAlign:"center"}}>Please Login</h2>
       <input type='text'
       value={username}
       onChange={(e)=>setusername(e.target.value)}
-      placeholder='username' />
+      placeholder='username' 
+      style={{margin:"10px",marginLeft:"580px",}}/>
+      <br />
       <input type='text'
       value={password}
       onChange={(e)=>setpassword(e.target.value)}
-      placeholder='password' />
-      <button onClick={handleSubmit}>Submit</button>
+      placeholder='password' 
+       style={{margin:"10px", marginLeft:"580px"}}
+      />
+      <br />
+      <button onClick={handleSubmit}  style={{margin:"10px", marginLeft:"640px"}}>Submit</button>
     </div>
   )
 }
